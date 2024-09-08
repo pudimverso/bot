@@ -1,0 +1,42 @@
+name: Pyright
+
+on: [push, pull_request]
+
+jobs:
+  pyright:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install PDM
+        run: pipx install pdm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pdm'
+
+      - name: Install project
+        run: pdm install --no-interaction
+
+      - name: Activate virtual environment
+        run: echo "${{ github.workspace }}/.venv/bin" >> $GITHUB_PATH
+
+      - name: Add Poetry binary to PATH
+        run: echo "${HOME}/.local/bin" >> $GITHUB_PATH
+
+      - name: Print environment for debug
+        run: |
+          echo "Python location: $(which python)"
+          echo "PDM location: $(which pdm)"
+          pdm --version
+          which pyright
+
+      - name: Run Pyright
+        uses: jakebailey/pyright-action@v2
+        with:
+          version: "PATH"
+          annotate: "all"
