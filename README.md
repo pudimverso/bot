@@ -50,12 +50,12 @@ pdm install
 
 3. Ative o ambiente virtual
 ```bash
-$eval(pdm venv activate in-project)
+eval "$(pdm venv activate in-project)"
 ```
 
 4. Copie o arquivo `.env.sample` para `.env` e preencha os valores nescessários
 ```bash
-cp .env.example .env
+cp .env.sample .env
 ```
 
 5. Inicie o bot!
