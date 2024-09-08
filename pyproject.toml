@@ -7,9 +7,10 @@ authors = [
 	{name = "Teilor", email = "teilochan100@gmail.com"},
 ]
 dependencies = [
-	"discord-py>=2.4.0",
-	"pydantic>=2.9.0",
-	"pydantic-settings>=2.4.0",
+    "discord-py>=2.4.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.4.0",
+    "pre-commit>=3.8.0",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"

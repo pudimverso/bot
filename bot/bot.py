@@ -1,4 +1,5 @@
 """Módulo principal"""
+
 from discord.ext.commands import Bot
 
 from importlib import import_module
