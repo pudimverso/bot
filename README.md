@@ -36,7 +36,7 @@ Ele foi feito para implementar uma variedade de features para o servidor, inclui
 - Optional: [Just](https://github.com/casey/just/)
 
 ### Como instalar
-Assumindo que você, siga esses passos para começar a desenvolver para o projeto:
+Assumindo que você tenha os pré requisitos, siga esses passos para começar a desenvolver para o projeto:
 
 1. Clone o repositório
 ```bash
