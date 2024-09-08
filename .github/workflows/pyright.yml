@@ -16,7 +16,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install PDM
-        run: pipx install pdm
+        run: pipx install pdm --python python3.12
 
       - name: Install project
         run: pdm install
