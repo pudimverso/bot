@@ -10,14 +10,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install PDM
-        run: pipx install pdm
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pdm'
+
+      - name: Install PDM
+        run: pipx install pdm
 
       - name: Install project
         run: pdm install --no-interaction
