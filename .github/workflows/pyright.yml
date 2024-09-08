@@ -19,7 +19,7 @@ jobs:
         run: pipx install pdm
 
       - name: Install project
-        run: pdm install --no-interaction
+        run: pdm install
 
       - name: Activate virtual environment
         run: echo "${{ github.workspace }}/.venv/bin" >> $GITHUB_PATH
