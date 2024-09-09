@@ -10,12 +10,17 @@ dependencies = [
     "discord-py>=2.4.0",
     "pydantic>=2.9.0",
     "pydantic-settings>=2.4.0",
+    "sqlalchemy>=2.0.34",
+    "alembic>=1.13.2",
+    "psycopg2-binary>=2.9.9",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 
 [tool.pdm]
+distribution = false
+
 [tool.pdm.dev-dependencies]
 dev = [
     "pyright>=1.1.379",
