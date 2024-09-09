@@ -10,6 +10,7 @@ dependencies = [
     "discord-py>=2.4.0",
     "pydantic>=2.9.0",
     "pydantic-settings>=2.4.0",
+    "sqlalchemy>=2.0.34",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
