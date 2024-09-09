@@ -41,5 +41,3 @@ class Member(Base):
         nullable=False,
     )
     """Data de entrada no servidor"""
-    
-

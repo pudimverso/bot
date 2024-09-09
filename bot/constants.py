@@ -26,6 +26,7 @@ class _Project(EnvConfig, env_prefix="project_"):
 
 Project = _Project()  # type: ignore
 
+
 class _Database(EnvConfig, env_prefix="database_"):
     url: str
 
